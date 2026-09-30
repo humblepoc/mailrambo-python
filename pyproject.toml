@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mailrambo"
+version = "0.1.0"
+description = "Official Python client for the MailRambo email verification API - strict yes/no deliverability, disposable and catch-all detection."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.8"
+authors = [{ name = "iodevz", email = "hello@mailrambo.com" }]
+dependencies = ["httpx>=0.24,<1"]
+keywords = ["email", "email-verification", "email-validation", "disposable-email", "catch-all", "bounce", "deliverability"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Communications :: Email",
+    "Framework :: AsyncIO",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://www.mailrambo.com"
+Documentation = "https://www.mailrambo.com/developers"
+"API spec" = "https://www.mailrambo.com/v1/openapi.json"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mailrambo"]
