@@ -26,6 +26,7 @@ classifiers = [
 Homepage = "https://www.mailrambo.com"
 Documentation = "https://www.mailrambo.com/developers"
 "API spec" = "https://www.mailrambo.com/v1/openapi.json"
+Repository = "https://github.com/humblepoc/mailrambo-python"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/mailrambo"]
